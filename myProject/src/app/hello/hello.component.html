@@ -1,0 +1,23 @@
+
+<!--<p *ngIf="!greeting; else showGreeting">Enter a greeting inside of the text box.</p>
+
+<ng-template #showGreeting>
+  <p>You've added a greeting to the text box!</p>
+</ng-template>
+
+<p>
+  {{ greeting }}
+</p>
+
+<input type="text" [(ngModel)]="greeting" (keyup)="log($event)">-->
+
+<!--<div>
+  <ul>
+    <li *ngFor="let person of people">{{person.name}}</li>
+  </ul>
+</div>-->
+
+<input type="text" [(ngModel)]="personName">
+<button (click)="addPerson(personName)">Add</button>
+
+<app-greeting *ngFor="let person of people" [person]="person"></app-greeting>
