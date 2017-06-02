@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>HomePage</ion-title>
   </ion-navbar>
 
@@ -15,6 +15,21 @@
 
 <ion-content padding>
 
-  <button ion-button (click)='navigateToSecondPage()'>navigate to second page</button>
+  <button color="custom" ion-button (click)='navigateToSecondPage()'>navigate to second page</button>
+
+  <div margin-horizontal padding text-capitalize>
+    <p>Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic 
+      Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic Hello ionic 
+      Hello ionic Hello ionic 
+
+      Hello ionic Hello ionic 
+    </p>
+  </div>
+
+  <ion-fab bottom right>
+    <button ion-fab color="secondary">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
 
 </ion-content>
